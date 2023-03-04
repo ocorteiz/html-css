@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa:2</title>
+    <style>
+        body {
+            background-color: lightslategray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px 30px 40px; /* ARREDONDAMENTO DE BORDA */
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.47);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 10px;
+            box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 34%); /* SOMBRA */
+        }
+        
+        article > aside {
+            background-color: rgb(131, 131, 131);
+        }
+
+        nav {
+            background-color: rgb(77, 88, 99);
+            box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 34%);
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+ 
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="">LINK</a>
+            <a href="">LINK</a>
+            <a href="">LINK</a>
+            <a href="">LINK</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+        </section>
+        <section>
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas excepturi adipisci ad dignissimos a nam aliquid sit quia, culpa omnis necessitatibus sunt ducimus reprehenderit provident illo optio. Voluptate, reiciendis quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sequi cupiditate? Voluptatum illo quidem, repudiandae, laboriosam ratione iure voluptatibus temporibus quo dolor dolore maiores quibusdam! Harum quae neque ad accusantium.</p>
+                <aside>Artigo escrito por Luis Cortêz</aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por OCTZ</p>
+    </footer>
+</body>
+</html>

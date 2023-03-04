@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Abra esta pagina em outros dispositivos ou altere o tamanho da pagina do navegador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="img/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="img/imagem-m.png" type="image/png">
+        <img src="img/imagem-g.png" alt="Imagem Flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <audio preload="auto"  autoplay controls> <!-- preload(auto,none,metadata);autoplay;controls;loop -->
+        <source src="music/Blue Mood - Robert Munzinger.mp3" type="audio/mpeg">
+        <source src="music/Blue Mood - Robert Munzinger.ogg" type="audio/ogg">
+        <source src="music/Blue Mood - Robert Munzinger.wav" type="audio/wav">
+        <p>Seu navegador não suporta audio <a href="./music/Blue Mood - Robert Munzinger.zip" download="teste.zip" type="audio/mpeg" target="_blank">Clique Aqui</a> para baixa-lo</p>
+    </audio>
+
+</body>
+</html>

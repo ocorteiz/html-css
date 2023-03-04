@@ -1,0 +1,23 @@
+ Modelo de Caixas
+
+ >Anatomida de Caixa:
+
+ 1º Content (Conteudo) - Height (Altura) e Width (Largura)
+ 2º Padding (Preenchimento)
+ 3º Border (Borda)
+ 4º Outline (Contorno)
+ 5º Margin (Margem)
+
+>Shorthands:
+
+ Padding e Margin ; Top-Right-Bottom-Left
+ Border e Outline ; Width-Style-Color
+
+ ou 
+
+ Padding e Margin ; Top+Bottom-Right+Left
+
+
+
+
+

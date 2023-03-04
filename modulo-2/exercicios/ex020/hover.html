@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p { /* SELETOR DE FILHO */
+            display: none; /* ESCONDIDO */
+        } 
+
+        div:hover > p {
+            display: block; /* FIXA OU UNICA LINHA */
+            background-color: red;
+            color: white;
+            width: 150px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse no texto abaixo &dArr;</p>
+    <div>
+        Passe o mouse aqui!
+        <p>SURPRESA!</p>
+    </div>
+</body>
+</html>
