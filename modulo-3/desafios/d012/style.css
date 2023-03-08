@@ -42,36 +42,32 @@ header > p > a:hover {
 }
 
 section {
-    font-size: 9vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 30px;
+    font-size: 3.5vw;
     font-family: 'Xilosa', sans-serif;
 }
 
-section > p {
-    padding: 70px 0px 70px 30px;
+.container {
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    
 }
 
-section > aside > p {
-    background-color: rgba(0, 0, 0, 0.492);
-    margin-right: 50%;
-}
-
-#container01 {
+#img01 {
     background-image: url(imgs/background001.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-
-    padding: 0px;
-    padding: 70px 0px 70px 30px;
-    color: white;
 }
 
-#container02 {
+#img02 {
     background-image: url(imgs/background002.jpg);
+}
 
-    background-size: cover;
-    background-attachment: fixed;
-
-    padding: 0px;
-    padding: 70px 0px 70px 30px;
-    color: white;
+section.container > p {
+    background-color: rgba(0, 0, 0, 0.459);
+    max-width: 50%;
+    line-height: 1.5em;
+    padding: 10px;
 }
