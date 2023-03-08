@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            border-radius: 5px 5px 0px 0px;
+            padding-top: 5px;
+            font-weight: bold;
+            padding-bottom: 5px;
+            background-color: lightgray;
+        }
+        
+        thead, tfoot {
+            background-color: rgb(102, 102, 102);
+            color: white;
+        }
+
+        thead > tr > th { /* Cabeçalho Fixo */
+            position: sticky;
+            top: -1px;
+            background-color: rgb(102, 102, 102);
+        }
+
+        th, td {
+            border: 2px solid black;
+        }
+
+
+        tbody > tr:nth-child(2n) { /* Efeito Zebrado */
+            background-color: lightgrey;
+        }
+
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Hierarquia de Tabelas (Grandes):
+
+        1º Table = Tabela
+        2º THEAD (Titulo) -> TR, TD, TH
+        3º TBODY (Corpo) -> TR, TD, TH
+        4º TFOOT (Foot) -> TR, TD, TH
+     -->
+     <!-- 
+        Caption: Cabeçalho
+        Scope: Alinhamento dos Dados -> col; coluna - rol;
+      -->
+
+     <table>
+        <caption>Tabela Total de Habitantes</caption>
+        <thead>
+            <tr>
+                <th scope="col" >ESTADO</th>
+                <th scope="col" style="width: 100px;">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 024 937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 732 660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 615 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 659 023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 835 379</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" >TOTAL DE HABITANTES</th>
+                <th  class="numero">90 343 233</th>
+            </tr>
+        </tfoot>
+     </table>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum tempore iure inventore, ipsa facilis rem. Ipsam quisquam est rerum deserunt amet voluptas labore fugiat praesentium aperiam, nam tempora nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione quas unde debitis error quae ipsa dignissimos ab deserunt labore, tempora minima vitae vero sint laborum, nisi explicabo maiores? Dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus voluptas suscipit perferendis quae perspiciatis facilis fuga praesentium et, officia aperiam quibusdam ullam, porro aspernatur aut veritatis repellat cumque culpa? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam qui consectetur suscipit, beatae corporis dolores necessitatibus dolorum rerum blanditiis quas eaque molestiae temporibus est quia voluptas ex? Dolores, quas rem?</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum tempore iure inventore, ipsa facilis rem. Ipsam quisquam est rerum deserunt amet voluptas labore fugiat praesentium aperiam, nam tempora nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione quas unde debitis error quae ipsa dignissimos ab deserunt labore, tempora minima vitae vero sint laborum, nisi explicabo maiores? Dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus voluptas suscipit perferendis quae perspiciatis facilis fuga praesentium et, officia aperiam quibusdam ullam, porro aspernatur aut veritatis repellat cumque culpa? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam qui consectetur suscipit, beatae corporis dolores necessitatibus dolorum rerum blanditiis quas eaque molestiae temporibus est quia voluptas ex? Dolores, quas rem?</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum tempore iure inventore, ipsa facilis rem. Ipsam quisquam est rerum deserunt amet voluptas labore fugiat praesentium aperiam, nam tempora nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione quas unde debitis error quae ipsa dignissimos ab deserunt labore, tempora minima vitae vero sint laborum, nisi explicabo maiores? Dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus voluptas suscipit perferendis quae perspiciatis facilis fuga praesentium et, officia aperiam quibusdam ullam, porro aspernatur aut veritatis repellat cumque culpa? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam qui consectetur suscipit, beatae corporis dolores necessitatibus dolorum rerum blanditiis quas eaque molestiae temporibus est quia voluptas ex? Dolores, quas rem?</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum tempore iure inventore, ipsa facilis rem. Ipsam quisquam est rerum deserunt amet voluptas labore fugiat praesentium aperiam, nam tempora nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione quas unde debitis error quae ipsa dignissimos ab deserunt labore, tempora minima vitae vero sint laborum, nisi explicabo maiores? Dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus voluptas suscipit perferendis quae perspiciatis facilis fuga praesentium et, officia aperiam quibusdam ullam, porro aspernatur aut veritatis repellat cumque culpa? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam qui consectetur suscipit, beatae corporis dolores necessitatibus dolorum rerum blanditiis quas eaque molestiae temporibus est quia voluptas ex? Dolores, quas rem?</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum tempore iure inventore, ipsa facilis rem. Ipsam quisquam est rerum deserunt amet voluptas labore fugiat praesentium aperiam, nam tempora nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione quas unde debitis error quae ipsa dignissimos ab deserunt labore, tempora minima vitae vero sint laborum, nisi explicabo maiores? Dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus voluptas suscipit perferendis quae perspiciatis facilis fuga praesentium et, officia aperiam quibusdam ullam, porro aspernatur aut veritatis repellat cumque culpa? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam qui consectetur suscipit, beatae corporis dolores necessitatibus dolorum rerum blanditiis quas eaque molestiae temporibus est quia voluptas ex? Dolores, quas rem?</p>
+</body>
+</html>
