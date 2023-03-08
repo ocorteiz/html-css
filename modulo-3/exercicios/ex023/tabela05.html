@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesclagem de Tabela</title>
+    <title>ColGroup</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2em; 
+            font-size: 1.2em;
         }
 
         table {
@@ -16,39 +16,60 @@
             border-collapse: collapse;
         }
 
-        td {
+        td,th {
             border: 2px solid black;
             text-align: center;
             padding: 5px;
         }
+
+        .nome {
+            background-color: red;
+        }
+
+        .sexo {
+            background-color: purple;
+        }
     </style>
 </head>
 <body>
-    <!-- 
-        Rownspan: Mesclagem Vertical
-        Colspan: Mesclagem Horizontal
-     -->
-    <h1>Mesclagem de Celula</h1>
     <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo" span="2">
+            <col class="idade">
+        </colgroup>
+        <tr>
+            <th>NOME</th>
+            <th>SEXO</th>
+            <th>IDADE</th>
+        </tr>
         <tr>
             <td>A</td>
             <td>B</td>
             <td>C</td>
         </tr>
         <tr>
-            <td colspan="2">D</td>
-          
+            <td>D</td>
+            <td>E</td>
             <td>F</td>
         </tr>
         <tr>
-            <td rowspan="2">H</td>
-            <td rowspan="2">I</td>
-            <td>J</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
         </tr>
         <tr>
+            <td>J</td>
             <td>K</td>
-    
+            <td>L</td>
         </tr>
     </table>
 </body>
 </html>
+
+<!-- 
+    Tabela Responsiva:
+
+    1º Envelopa em uma Div
+    2º CSS -> Overflow: auto
+ -->

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Completa</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">GRUPO</th>
+                <th scope="col" scope="col">NOMES</th>
+                <th colspan="3" scope="colgroup">FILMES</th>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">MULHERES</th>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblison</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">HOMENS</th>
+                <td>Bruno Silva</td>
+                <td>O Corrupto</td>
+                <td>Django</td>
+                <td>Hitman</td>
+            </tr>
+            <tr>
+                <td>Luis Felipe</td>
+                <td>Taxi Drive</td>
+                <td>Clube da Luta</td>
+                <td>Indomaveis</td>
+            </tr>
+            <tr>
+                <td>Daniel Almeida</td>
+                <td>Intocaveis</td>
+                <td>Panico</td>
+                <td>Wall-e</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+</body>
+</html>
